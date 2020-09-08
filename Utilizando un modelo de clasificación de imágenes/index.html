@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clasificación de imágenes</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+
+</head>
+
+<body>
+
+  <img id="img" crossorigin src="https://i.imgur.com/JlUvsxa.jpg" width="227" height="227" alt="img" />
+
+  <button onclick="cambiarImg();" >Cambiar img</button>
+
+  <div id="descripcion_img" > </div>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
