@@ -26,9 +26,9 @@ async function app() {
 
     try {
       result2 = await classiFier.predicClass(activation);
-      const classes = ['Untrained', 'Gato', 'Dino', 'Alex', 'Ok', 'Rock']
-      // document.getElementById('console2' + classes[result2.label]);
-      document.getElementById('console2').innerHTML = "Console2 prediction: " + classes[result2.label];
+      const classes = ['Untrained', 'Gato', 'Dino', 'Diego', 'Ok', 'Rock']
+      document.getElementById('console2' + classes[result2.label]);
+      // document.getElementById('console2').innerHTML = "Console2 prediction: " + classes[result2.label];
 
     } catch (error) {
       console.log(error);
