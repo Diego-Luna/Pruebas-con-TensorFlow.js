@@ -36,7 +36,7 @@ async function app() {
       result2 = {};
     }
 
-    const classes = ["Untrained", "Gato", "Dino", "Alex", "OK", "Rock"]
+    const classes = ["Untrained", "Telefono", "Baso", "Persona", "OK", "Rock"]
 
     document.getElementById('console').innerText = `
       prediction: ${result[0].className}\n
