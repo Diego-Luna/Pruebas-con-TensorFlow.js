@@ -1,44 +1,5 @@
-<html>
-  <head>
-    <!-- Load the latest version of TensorFlow.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
-    <title>🤟🥑🌮🤟</title>
-  </head>
-  <body>
-
-    <!-- Add an image that we will use to test -->
-    <img id="img" crossorigin src="https://picsum.photos/200/300?random=3243" width="227" height="227"/>
-    <div id="descripcion_imagen"></div>
-    <button id="cambiaImagen" onclick="cambiarImagen();">Cambiar imagen</button>
-
-    <br>
-    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
-    <div id="console"></div><br>
-    <div id="console2"></div><br>
-    <button id="clase-a" onclick="addExample(1)">Gato</button>
-    <button id="clase-b" onclick="addExample(2)">Dino</button>
-    <button id="clase-c" onclick="addExample(3)">Persona</button>
-    <button id="clase-d" onclick="addExample(4)">OK</button>
-    <button id="clase-e" onclick="addExample(5)" >Rock</button><br>
-    <!-- Load index.js after the content of the page -->
-    <!-- <script src="script.js?v=151"></script> -->
-    <script src="script.js"></script>
-
-    <!-- <br/>
-    <br />
-    <br /> -->
-    <!-- <button id="saveKnn"  onclick="saveKnn();">Almacenar configuración</button> -->
-    <!-- <br /> -->
-    <!-- <button id="loadKnn" onclick="loadKnn();">Recuperar configuración</button> -->
-
-  </body>
-</html>
-
-
 <!-- test 1 -->
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -54,27 +15,38 @@
 
 <body>
 
-  <img id="img" crossorigin src="https://i.imgur.com/JlUvsxa.jpg" width="227" height="227" alt="img" />
-
+  <!-- <img id="img" crossorigin src="https://i.imgur.com/JlUvsxa.jpg" width="227" height="227" alt="img" /> -->
+  <img id="img" crossorigin src="https://picsum.photos/200/300?random=3243" width="227" height="227" />
+  <br>
   <button onclick="cambiarImg();">Cambiar img</button>
-
+  <br>
   <div id="descripcion_img"> </div>
+  <br>
 
-  <button id="clase-a" onclick="addExample(1)">Gatos</button>
-  <button id="clase-a" onclick="addExample(2)">Dino</button>
-  <button id="clase-a" onclick="addExample(3)">Diego</button>
-  <button id="clase-a" onclick="addExample(4)">Ok</button>
-  <button id="clase-a" onclick="addExample(5)">Rock</button>
+  <button id="clase-a" onclick="addExample(1)">Lapiz</button>
+  <button id="clase-b" onclick="addExample(2)">Tigeras</button>
+  <button id="clase-c" onclick="addExample(3)">Persona</button>
+  <button id="clase-d" onclick="addExample(4)">Ok</button>
+  <button id="clase-e" onclick="addExample(5)">Rock</button>
 
   <div id="console"></div>
   <br>
+
+  <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+
+  <br>
   <div id="console2"></div>
 
-  <video autoplay="" playsinline muted id="webcamp" width="224" height="224"></video>
+  <br />
+  <button id="saveKnn" onclick="saveKnn();">Almacenar configuración</button>
+  <br />
+  <button id="loadKnn" onclick="loadKnn();">Recuperar configuración</button>
+
+
 
   <script src="./script.js"></script>
 
 
 </body>
 
-</html> -->
+</html>
