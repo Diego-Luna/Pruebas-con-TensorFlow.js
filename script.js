@@ -104,6 +104,10 @@ const loadKnn = async () => {
   classifier.setClassifierDataset(Object.fromEntries(JSON.parse(datasetJson).map(([label, data, shape]) => [label, tf.tensor(data, shape)])));
 };
 
+// almacenar modelo
+async function guardarModelo(params) {
+  const saveResult = await modelo.save('downloads://modelo-regresion');
+}
 
 app()
 
