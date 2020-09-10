@@ -105,8 +105,14 @@ const loadKnn = async () => {
 };
 
 // almacenar modelo
-async function guardarModelo(params) {
-  const saveResult = await modelo.save('downloads://modelo-regresion');
+async function guardarModelo(test) {
+  // const saveResult = await classifier.save('downloads://modelo-regresion');
+  if(test === '2'){
+    const saveResult = await classifier.save('downloads://modelo-regresion');    
+  }else {
+    const saveResult = await model.save('downloads://modelo-regresion');
+  }
+
 }
 
 app()
